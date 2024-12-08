@@ -1,144 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/writecx_icon.png">
-    <title>Write CX - AI Writing Enhancement</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  fontFamily: {
+                     sans: ["Inter", "ui-sans-serif", "system-ui"],
+                  },
+                  colors: {
+                     "brand-blue": {
+                        DEFAULT: "#3B82F6",
+                        light: "#60A5FA",
+                        dark: "#2563EB",
+                     },
+                     "brand-gray": {
+                        DEFAULT: "#F3F4F6",
+                        hover: "#E5E7EB",
+                     },
+                  },
+               },
+            },
+         };
+      </script>
+      <style>
+         body {
+            letter-spacing: -0.025em;
             line-height: 1.6;
-            color: #333;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 6rem 1rem;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .header p {
-            font-size: 1.25rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .features {
-            padding: 4rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .feature {
-            padding: 1.5rem;
-            border-radius: 8px;
-            background: #f8fafc;
-            text-align: center;
-        }
-        
-        .feature h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .cta {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: #f1f5f9;
-        }
-        
-        .button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        
-        .button:hover {
-            background: var(--secondary);
-        }
-        
-        .footer {
-            background: #1e293b;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .footer a {
-            color: #e2e8f0;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .header {
-                padding: 4rem 1rem;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <h1>Write CX</h1>
-        <p>Enhance your writing instantly with AI-powered optimization for social media and emails</p>
-    </header>
+         }
+         .feature {
+            transition: transform 0.3s ease;
+         }
+         .feature:hover {
+            transform: translateY(-5px);
+         }
+      </style>
+   </head>
+   <body class="text-gray-800 antialiased">
+      <div class="fixed top-4 right-4 z-50 flex space-x-3">
+         <a
+            href="#"
+            class="px-3 py-1.5 bg-brand-gray hover:bg-brand-gray-hover rounded-lg shadow-sm hover:shadow-md transition-all text-center group"
+         >
+            <div
+               class="text-sm font-medium text-gray-700 group-hover:text-gray-900"
+            >
+               Browser Extension
+            </div>
+            <div class="text-xs text-gray-500 group-hover:text-gray-600">
+               Notify Me
+            </div>
+         </a>
+         <a
+            href="https://console.write.cx"
+            class="px-3 py-1.5 bg-brand-blue text-white rounded-lg shadow-sm hover:shadow-md hover:bg-brand-blue-dark transition-all text-center"
+         >
+            <div class="text-sm font-medium">Get Started</div>
+         </a>
+      </div>
 
-    <section class="features">
-        <div class="feature">
-            <h3>Social Media Perfect</h3>
-            <p>Optimize your social media responses with just one click. Perfect tone, perfect message.</p>
-        </div>
-        <div class="feature">
-            <h3>Email Enhancement</h3>
-            <p>Transform your emails into professional, clear, and effective communication.</p>
-        </div>
-        <div class="feature">
-            <h3>Quick Access</h3>
-            <p>Right-click to access anywhere. Fast, convenient, and seamless integration.</p>
-        </div>
-    </section>
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+         <header class="text-center py-8">
+            <h1
+               class="text-3xl font-bold tracking-tight text-gray-900 mb-4"
+            ></h1>
+         </header>
+         <main class="text-center py-36 bg-gray-100">
+            <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6">
+               Write CX
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+               Enhance your writing instantly with AI-powered optimization for
+               social media and emails
+            </p>
+            <div class="mt-10">
+               <a
+                  href="https://console.write.cx"
+                  class="inline-block px-8 py-3 bg-brand-blue text-white text-lg rounded-lg hover:bg-brand-blue-dark transition-all shadow-md"
+               >
+                  Get Started Now
+               </a>
+               <a
+                  href="#"
+                  class="inline-block px-8 py-3 bg-brand-blue text-white text-lg rounded-lg hover:bg-brand-blue-dark transition-all shadow-md"
+               >
+                  <div
+                     class="text-sm font-medium text-gray-700 group-hover:text-gray-900"
+                  >
+                     Browser Extension
+                  </div>
+                  <div class="text-xs text-gray-500 group-hover:text-gray-600">
+                     Notify Me
+                  </div>
+               </a>
+            </div>
+         </main>
 
-    <section class="cta">
-        <h2>Start Writing Better Today</h2>
-        <p>Available as a Chrome extension</p>
-        <br>
-        <a href="#" class="button">Install Extension</a>
-    </section>
+         <section class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+               class="feature bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all"
+            >
+               <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Social Media Perfect
+               </h3>
+               <p class="text-sm text-gray-600">
+                  Optimize your social media responses with just one click.
+                  Perfect tone, perfect message.
+               </p>
+            </div>
+            <div
+               class="feature bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all"
+            >
+               <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Email Enhancement
+               </h3>
+               <p class="text-sm text-gray-600">
+                  Transform your emails into professional, clear, and effective
+                  communication.
+               </p>
+            </div>
+            <div
+               class="feature bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all"
+            >
+               <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                  Quick Access
+               </h3>
+               <p class="text-sm text-gray-600">
+                  Right-click to access anywhere. Fast, convenient, and seamless
+                  integration.
+               </p>
+            </div>
+         </section>
+      </div>
 
-    <footer class="footer">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-        <p>&copy; 2024 WriteRight. All rights reserved.</p>
-    </footer>
-</body>
+      <footer class="text-center py-8 text-sm text-gray-500">
+         <div class="space-x-4 mb-4">
+            <a href="/privacy.html" class="hover:text-gray-700"
+               >Privacy Policy</a
+            >
+            <a href="/terms.html" class="hover:text-gray-700"
+               >Terms of Service</a
+            >
+         </div>
+         <p>&copy; 2024 WriteRight. All rights reserved.</p>
+      </footer>
+   </body>
 </html>
