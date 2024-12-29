@@ -1,0 +1,78 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4F46E5" />
+            <stop offset="100%" stop-color="#4338CA" />
+        </linearGradient>
+        
+        <linearGradient id="metallic" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FAFAFA" />
+            <stop offset="50%" stop-color="#D1D5DB" />
+            <stop offset="100%" stop-color="#9CA3AF" />
+        </linearGradient>
+    </defs>
+    
+    <circle cx="256" cy="256" r="240" fill="url(#bgGradient)"/>
+    
+    
+    <path d="M160 140c0-11.046 8.954-20 20-20h152c11.046 0 20 8.954 20 20v232c0 11.046-8.954 20-20 20H180c-11.046 0-20-8.954-20-20V140z" 
+          fill="white" 
+          filter="drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"/>
+    <path d="M352 140v232c0 11.046-8.954 20-20 20H180c-11.046 0-20-8.954-20-20" 
+          stroke="#E5E7EB" 
+          stroke-width="4"/>
+    
+    
+    <path d="M352 140c0 0-20 0-20 20s20 20 20 20" 
+          fill="#F3F4F6"
+          filter="drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.1))"/>
+    
+    
+    <rect x="180" y="180" width="152" height="3" rx="1.5" fill="#E5E7EB" opacity="0.8"/>
+    <rect x="180" y="220" width="152" height="3" rx="1.5" fill="#E5E7EB" opacity="0.8"/>
+    <rect x="180" y="260" width="152" height="3" rx="1.5" fill="#E5E7EB" opacity="0.8"/>
+    
+    
+    <g transform="translate(240, 200) rotate(45)">
+        
+        <path d="M0,0 L120,0 L140,20 L120,40 L0,40 L-10,20 Z" 
+              fill="#38BDF8"
+              filter="drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2))"/>
+        
+        
+        <path d="M-10,20 L0,0 L0,40 Z" 
+              fill="#818CF8"
+              filter="drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15))"/>
+        
+        
+        <path d="M75,-2 L85,-2 L85,42 L75,42 Z" 
+              fill="url(#metallic)"
+              opacity="0.9"/>
+        
+        
+        <path d="M95,0 C95,-5 100,-5 100,0 L100,40 C100,45 95,45 95,40 Z"
+              fill="url(#metallic)"
+              opacity="0.85"/>
+              
+        
+        <path d="M-8,20 L15,20" 
+              stroke="#6366F1" 
+              stroke-width="1.5"
+              stroke-linecap="round"/>
+    </g>
+    
+    
+    <g transform="translate(300, 160)">
+        <circle cx="32" cy="32" r="32" 
+                fill="#10B981"
+                filter="drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2))"/>
+        <path d="M20 32l8 8l16-16" 
+              stroke="white" 
+              stroke-width="4.5" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+              filter="drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1))"/>
+    </g>
+</svg>
+
