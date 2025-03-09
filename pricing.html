@@ -45,6 +45,8 @@
             overflow: hidden;
             width: 300px;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .pricing-plan:hover {
@@ -70,6 +72,7 @@
         .plan-features {
             padding: 30px 20px;
             text-align: left;
+            flex-grow: 1;
         }
 
         .plan-features ul {
@@ -145,7 +148,7 @@
 
             <div class="pricing-plan">
                 <div class="plan-header">Regular</div>
-                <div class="plan-price">$6.9</div>
+                <div class="plan-price">$6.9/month</div>
                 <div class="plan-features">
                     <ul>
                         <li>Ideal for daily active users and professionals</li>
@@ -160,7 +163,7 @@
 
             <div class="pricing-plan">
                 <div class="plan-header">Frequent</div>
-                <div class="plan-price">$12.9</div>
+                <div class="plan-price">$12.9/month</div>
                 <div class="plan-features">
                     <ul>
                         <li>Designed for power users with intensive daily needs</li>
@@ -177,7 +180,7 @@
 
         <div class="pricing-note">
             <p>All prices are monthly subscription fees.</p>
-            <p>As a consumer, you have the right to cancel your subscription within 14 days, refer to <a>http://localhost:8000/terms.html</a> for more details.</p>
+            <p>As a consumer, you have the right to cancel your subscription within 14 days, refer to <a href="/terms.html">Terms of Services</a> for more details.</p>
             <p>If you have any questions, please contact us through contact@write.cx .</p>
         </div>
     </div>
