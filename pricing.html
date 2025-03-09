@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/wcxicon.svg" />
+    <title>Pricing - Write CX</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .pricing-header {
+            margin-bottom: 60px;
+        }
+
+        .pricing-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .pricing-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-plan {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-plan:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-header {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .plan-price {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .plan-features {
+            padding: 30px 20px;
+            text-align: left;
+        }
+
+        .plan-features ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plan-features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .plan-features li::before {
+            content: "•";
+            color: #6c5ce7;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .plan-cta {
+            padding: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: #6c5ce7;
+            border: 2px solid #6c5ce7;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #6c5ce7;
+            color: white;
+        }
+
+        .pricing-note {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pricing-container">
+        <div class="pricing-header">
+            <h1>Pricing Table</h1>
+            <p>STARTER PACK</p>
+        </div>
+
+        <div class="pricing-plans">
+            <div class="pricing-plan">
+                <div class="plan-header">Occasional</div>
+                <div class="plan-price">0</div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Light usage, up to 10 sentences per day</li>
+                        <li>Basic translation and optimization features</li>
+                        <li>Monthly usage limits apply</li>
+                        <li>Community support</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="cta-button">Get Now</a>
+                </div>
+            </div>
+
+            <div class="pricing-plan">
+                <div class="plan-header">Regular</div>
+                <div class="plan-price">$6.9</div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Unlimited usage, ideal for learning and work</li>
+                        <li>Advanced translation and optimization features</li>
+                        <li>Priority response generation</li>
+                        <li>Dedicated customer support</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="cta-button">Get Now</a>
+                </div>
+            </div>
+
+            <div class="pricing-plan">
+                <div class="plan-header">Frequent</div>
+                <div class="plan-price">$12.9</div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Unlimited usage, ideal for learning and work</li>
+                        <li>Advanced translation and optimization features</li>
+                        <li>Priority response generation</li>
+                        <li>Dedicated customer support</li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="cta-button">Get Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-note">
+            <p>All prices are monthly subscription fees.</p>
+            <p>As a consumer, you have the right to cancel your subscription within 14 days, refer to <a>http://localhost:8000/terms.html</a> for more details.</p>
+            <p>If you have any questions, please contact us through contact@write.cx .</p>
+        </div>
+    </div>
+</body>
+
+</html>
