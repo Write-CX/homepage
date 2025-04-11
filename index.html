@@ -106,6 +106,298 @@
                </div>
             </div>
          </div>
+
+         <!-- Onboarding Section -->
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="text-3xl font-bold text-center mb-4">How to Use Write CX</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">Three simple ways to enhance your writing experience</p>
+
+            <!-- 场景2：快速翻译 -->
+            <div class="mb-20">
+               <h3 class="text-2xl font-semibold text-center mb-8">Quick Translation & Refinement</h3>
+
+               <!-- 详细图片展示 - 改为多项目轮播 -->
+               <div class="bg-white p-6 rounded-xl shadow-md">
+                  <div class="relative" id="carousel-scene3">
+                     <!-- 轮播内容容器 -->
+                     <div class="overflow-hidden px-10">
+                        <div class="flex transition-transform duration-500 ease-in-out" id="carousel-container-scene3">
+                           <!-- 图片1 -->
+                           <div class="w-1/3 flex-shrink-0 px-2 transform transition-all duration-300">
+                              <div class="flex flex-col items-center">
+                                 <img
+                                    src="https://placehold.co/800x500"
+                                    alt="Access Settings"
+                                    class="rounded-lg w-full mb-4 object-cover"
+                                 />
+                                 <h4 class="font-medium mb-2 text-center text-lg">1. Accessing Settings Panel</h4>
+                                 <p class="text-gray-600 text-center text-sm">
+                                    Open the Write CX extension and click on Settings.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- 图片2 -->
+                           <div class="w-1/3 flex-shrink-0 px-2 transform transition-all duration-300">
+                              <div class="flex flex-col items-center">
+                                 <img
+                                    src="https://placehold.co/800x500"
+                                    alt="Style Preferences"
+                                    class="rounded-lg w-full mb-4 object-cover"
+                                 />
+                                 <h4 class="font-medium mb-2 text-center text-lg">2. Setting Style Preferences</h4>
+                                 <p class="text-gray-600 text-center text-sm">
+                                    Choose your preferred writing tone and style.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- 图片3 -->
+                           <div class="w-1/3 flex-shrink-0 px-2 transform transition-all duration-300">
+                              <div class="flex flex-col items-center">
+                                 <img
+                                    src="https://placehold.co/800x500"
+                                    alt="Custom Instructions"
+                                    class="rounded-lg w-full mb-4 object-cover"
+                                 />
+                                 <h4 class="font-medium mb-2 text-center text-lg">3. Creating Custom Instructions</h4>
+                                 <p class="text-gray-600 text-center text-sm">
+                                    Write specific instructions for how you want your text processed.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- 图片4 -->
+                           <div class="w-1/3 flex-shrink-0 px-2 transform transition-all duration-300">
+                              <div class="flex flex-col items-center">
+                                 <img
+                                    src="https://placehold.co/800x500"
+                                    alt="Save Settings"
+                                    class="rounded-lg w-full mb-4 object-cover"
+                                 />
+                                 <h4 class="font-medium mb-2 text-center text-lg">4. Saving Your Preferences</h4>
+                                 <p class="text-gray-600 text-center text-sm">
+                                    Save your settings to apply them to all future optimizations.
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- 图片5 -->
+                           <div class="w-1/3 flex-shrink-0 px-2 transform transition-all duration-300">
+                              <div class="flex flex-col items-center">
+                                 <img
+                                    src="https://placehold.co/800x500"
+                                    alt="Using Custom Settings"
+                                    class="rounded-lg w-full mb-4 object-cover"
+                                 />
+                                 <h4 class="font-medium mb-2 text-center text-lg">
+                                    5. Experiencing Personalized Results
+                                 </h4>
+                                 <p class="text-gray-600 text-center text-sm">
+                                    See how your text is optimized according to your preferences.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 轮播导航按钮 -->
+                     <button
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-md hover:bg-white z-10"
+                        id="prev-scene3"
+                     >
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="h-6 w-6 text-gray-700"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                     </button>
+                     <button
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/90 rounded-full p-3 shadow-md hover:bg-white z-10"
+                        id="next-scene3"
+                     >
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="h-6 w-6 text-gray-700"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke="currentColor"
+                        >
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                     </button>
+
+                     <!-- 指示点 -->
+                     <div class="flex justify-center mt-6 space-x-2">
+                        <button class="w-3 h-3 rounded-full bg-brand-blue carousel-dot-scene3" data-slide="0"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-dot-scene3" data-slide="1"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-dot-scene3" data-slide="2"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-dot-scene3" data-slide="3"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-dot-scene3" data-slide="4"></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Pricing Section -->
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50">
+            <h2 class="text-3xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">Choose the plan that works best for you</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+               <!-- Free Plan -->
+               <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Occasional</h3>
+                     <div class="text-4xl font-bold mb-1">Free</div>
+                     <p class="text-brand-blue-light">Perfect for trying out</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Light usage, up to 10 sentences per day</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Basic translation and optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Community support</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a
+                        href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-gray hover:bg-brand-gray-hover text-center rounded-md font-medium transition-all"
+                     >
+                        Get Started
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Regular Plan -->
+               <div
+                  class="bg-white rounded-xl shadow-lg transform md:-translate-y-4 overflow-hidden flex flex-col relative"
+               >
+                  <div
+                     class="absolute top-0 right-0 bg-brand-blue-light text-white text-xs font-bold px-3 py-1 rounded-bl-lg"
+                  >
+                     POPULAR
+                  </div>
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Regular</h3>
+                     <div class="text-4xl font-bold mb-1">$7.9</div>
+                     <p class="text-brand-blue-light">per month</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Ideal for daily active users</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Comfortable capacity for many writing sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Dedicated customer support</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a
+                        href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-blue hover:bg-brand-blue-dark text-white text-center rounded-md font-medium transition-all"
+                     >
+                        Subscribe Now
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </main>
 
       <!-- Footer -->
@@ -122,3 +414,93 @@
       </footer>
    </body>
 </html>
+
+<!-- 在页面底部添加轮播控制脚本 -->
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      // 为每个场景创建轮播控制
+      setupCarousel("scene1");
+      setupCarousel("scene2");
+      setupCarousel("scene3");
+
+      function setupCarousel(sceneId) {
+         const container = document.getElementById(`carousel-container-${sceneId}`);
+         const slides = container ? container.children : [];
+         const dots = document.querySelectorAll(`.carousel-dot-${sceneId}`);
+         const prevBtn = document.getElementById(`prev-${sceneId}`);
+         const nextBtn = document.getElementById(`next-${sceneId}`);
+
+         if (!container || !slides.length || !dots.length || !prevBtn || !nextBtn) return;
+
+         let currentSlide = 0;
+         const slideCount = dots.length;
+         const visibleSlides = 3; // 同时显示3个幻灯片
+
+         // 初始化轮播状态
+         updateCarouselState();
+
+         // 更新轮播状态
+         function updateCarouselState() {
+            // 移动容器位置
+            container.style.transform = `translateX(-${(currentSlide * 100) / visibleSlides}%)`;
+
+            // 更新所有幻灯片的样式
+            Array.from(slides).forEach((slide, index) => {
+               const distance = Math.abs(index - currentSlide);
+
+               if (distance === 0) {
+                  // 当前幻灯片
+                  slide.classList.add("scale-110", "z-20");
+                  slide.classList.remove("scale-90", "opacity-70");
+               } else {
+                  // 其他幻灯片
+                  slide.classList.remove("scale-110", "z-20");
+                  slide.classList.add("scale-90", "opacity-70");
+               }
+            });
+
+            // 更新指示点状态
+            dots.forEach((dot, index) => {
+               if (index === currentSlide) {
+                  dot.classList.add("bg-brand-blue");
+                  dot.classList.remove("bg-gray-300");
+               } else {
+                  dot.classList.remove("bg-brand-blue");
+                  dot.classList.add("bg-gray-300");
+               }
+            });
+         }
+
+         // 切换到指定幻灯片
+         function goToSlide(slideIndex) {
+            if (slideIndex < 0) slideIndex = slideCount - 1;
+            if (slideIndex >= slideCount) slideIndex = 0;
+
+            currentSlide = slideIndex;
+            updateCarouselState();
+         }
+
+         // 下一张幻灯片
+         function nextSlide() {
+            goToSlide(currentSlide + 1);
+         }
+
+         // 上一张幻灯片
+         function prevSlide() {
+            goToSlide(currentSlide - 1);
+         }
+
+         // 为导航按钮添加点击事件
+         prevBtn.addEventListener("click", prevSlide);
+         nextBtn.addEventListener("click", nextSlide);
+
+         // 为指示点添加点击事件
+         dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => goToSlide(index));
+         });
+
+         // 初始化轮播状态
+         updateCarouselState();
+      }
+   });
+</script>
