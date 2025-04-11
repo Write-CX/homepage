@@ -1,134 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/wcxicon.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/svg+xml" href="/wcxicon.svg" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
             theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ["Inter", "ui-sans-serif", "system-ui"],
-                    },
-                    colors: {
-                        "brand-blue": {
-                            DEFAULT: "#4F46E5",
-                            light: "#818CF8",
-                            dark: "#4338CA",
-                        },
-                        "brand-gray": {
-                            DEFAULT: "#F3F4F6",
-                            hover: "#E5E7EB",
-                        },
-                    },
-                },
+               extend: {
+                  fontFamily: {
+                     sans: ["Inter", "ui-sans-serif", "system-ui"],
+                  },
+                  colors: {
+                     "brand-blue": {
+                        DEFAULT: "#4F46E5",
+                        light: "#818CF8",
+                        dark: "#4338CA",
+                     },
+                     "brand-gray": {
+                        DEFAULT: "#F3F4F6",
+                        hover: "#E5E7EB",
+                     },
+                  },
+               },
             },
-        };
-    </script>
-    <link rel="stylesheet" href="css/main.css" />
-</head>
+         };
+      </script>
+      <link rel="stylesheet" href="css/main.css" />
+   </head>
 
-<body class="text-gray-800 antialiased bg-gray-50">
-
-    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   <body class="text-gray-800 antialiased bg-gray-50">
+      <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <img src="/wcxicon.svg" alt="Write CX" class="h-8 w-8" />
-                    <span class="font-bold text-xl gradient-text">Write CX</span>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
-                        target="_blank"
-                        class="px-4 py-2 bg-brand-gray hover:bg-brand-gray-hover rounded-md text-gray-700 font-medium transition-all flex items-center space-x-2">
-                        <span>Install Extension</span>
-                    </a>
-                    <a href="https://app.write.cx"
-                        class="px-4 py-2 bg-brand-blue text-white rounded-md font-medium hover:bg-brand-blue-dark transition-all">
-                        Get Started
-                    </a>
-                </div>
+               <div class="flex items-center space-x-2">
+                  <img src="/wcxicon.svg" alt="Write CX" class="h-8 w-8" />
+                  <span class="font-bold text-xl gradient-text">Write CX</span>
+               </div>
+               <div class="flex space-x-4">
+                  <a
+                     href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
+                     target="_blank"
+                     class="px-4 py-2 bg-brand-gray hover:bg-brand-gray-hover rounded-md text-gray-700 font-medium transition-all flex items-center space-x-2"
+                  >
+                     <span>Install Extension</span>
+                  </a>
+                  <a
+                     href="https://app.write.cx"
+                     class="px-4 py-2 bg-brand-blue text-white rounded-md font-medium hover:bg-brand-blue-dark transition-all"
+                  >
+                     Get Started
+                  </a>
+               </div>
             </div>
-        </div>
-    </nav>
+         </div>
+      </nav>
 
-
-    <main class="pt-24">
-        <!-- Hero Section -->
-        <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 main-spacing">
+      <main class="pt-24">
+         <!-- Hero Section -->
+         <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 main-spacing">
             <img src="/wcxicon.svg" alt="Write CX" class="h-24 w-24 mx-auto mb-8" />
             <h1 class="text-5xl font-bold gradient-text mb-6">Write CX</h1>
             <p class="text-2xl text-gray-600 max-w-2xl mx-auto mb-12">
-                Transform your writing with AI-powered optimization.
+               Transform your writing with AI-powered optimization.
             </p>
             <div class="flex flex-col items-center space-y-4 max-w-[250px] mx-auto">
-                <a href="https://app.write.cx"
-                    class="w-full px-8 py-3 bg-brand-blue text-white text-lg rounded-md hover:bg-brand-blue-dark transition-all shadow-md text-center">
-                    Start Writing Now
-                </a>
-                <a href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
-                    target="_blank"
-                    class="w-full px-8 py-3 bg-white border border-gray-200 text-gray-700 text-lg rounded-md hover:bg-gray-50 transition-all shadow-md text-center flex flex-col items-center">
-                    <span class="block">Browser Extension</span>
-                </a>
+               <a
+                  href="https://app.write.cx"
+                  class="w-full px-8 py-3 bg-brand-blue text-white text-lg rounded-md hover:bg-brand-blue-dark transition-all shadow-md text-center"
+               >
+                  Start Writing Now
+               </a>
+               <a
+                  href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
+                  target="_blank"
+                  class="w-full px-8 py-3 bg-white border border-gray-200 text-gray-700 text-lg rounded-md hover:bg-gray-50 transition-all shadow-md text-center flex flex-col items-center"
+               >
+                  <span class="block">Browser Extension</span>
+               </a>
             </div>
-        </div>
+         </div>
 
-        <!-- Features Section -->
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+         <!-- Features Section -->
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8">
-
-
-                <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                        Personal Writing Assistant
-                    </h3>
-                    <p class="text-gray-600">
-                        Write consistently across each use, maintaining your unique style while reducing repeated
-                        effort.
-                    </p>
-                </div>
-                <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                        One-Click Optimization
-                    </h3>
-                    <p class="text-gray-600">
-                        Polish your expressions instantly with native-level refinements at your fingertips.
-                    </p>
-                </div>
-                <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                        Quick Access
-                    </h3>
-                    <p class="text-gray-600">
-                        Browser extension coming soon - optimize your writing wherever inspiration strikes.
-                    </p>
-                </div>
+               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Personal Writing Assistant</h3>
+                  <p class="text-gray-600">
+                     Write consistently across each use, maintaining your unique style while reducing repeated effort.
+                  </p>
+               </div>
+               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-4">One-Click Optimization</h3>
+                  <p class="text-gray-600">
+                     Polish your expressions instantly with native-level refinements at your fingertips.
+                  </p>
+               </div>
+               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Quick Access</h3>
+                  <p class="text-gray-600">
+                     Browser extension coming soon - optimize your writing wherever inspiration strikes.
+                  </p>
+               </div>
             </div>
-        </div>
-    </main>
+         </div>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+         <!-- Onboarding Section -->
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="text-3xl font-bold text-center mb-12">How to Use Write CX</h2>
+
+            <!-- Scenario 1: Web Page Extension -->
+            <div class="mb-16">
+               <h3 class="text-2xl font-semibold text-center mb-8">Optimize Text on Any Website</h3>
+               <div class="grid md:grid-cols-3 gap-8">
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">1</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Select Text</h4>
+                     <p class="text-gray-600">Highlight any text on a webpage that you want to improve.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">2</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Click Extension</h4>
+                     <p class="text-gray-600">Click the Write CX extension icon in your browser toolbar.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">3</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Apply Changes</h4>
+                     <p class="text-gray-600">Review the optimized text and apply changes with one click.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Scenario 2: Context Menu Usage -->
+            <div class="mb-16">
+               <h3 class="text-2xl font-semibold text-center mb-8">Quick Translation & Refinement</h3>
+               <div class="grid md:grid-cols-3 gap-8">
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">1</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Select Text</h4>
+                     <p class="text-gray-600">Highlight text you want to translate or refine.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">2</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Right-Click</h4>
+                     <p class="text-gray-600">Open the context menu and select the Write CX option.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">3</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Choose Action</h4>
+                     <p class="text-gray-600">Select translate, refine, or other options from the submenu.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Scenario 3: Custom Instructions -->
+            <div>
+               <h3 class="text-2xl font-semibold text-center mb-8">Personalized Writing Style</h3>
+               <div class="grid md:grid-cols-3 gap-8">
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">1</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Open Settings</h4>
+                     <p class="text-gray-600">Click the extension and navigate to the settings page.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">2</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Create Instructions</h4>
+                     <p class="text-gray-600">Define your preferred writing style and tone preferences.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                     <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-brand-blue font-bold text-xl">3</span>
+                     </div>
+                     <h4 class="font-medium mb-2">Save & Apply</h4>
+                     <p class="text-gray-600">Save your custom instructions for consistent results every time.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Pricing Section -->
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50">
+            <h2 class="text-3xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">Choose the plan that works best for you</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+               <!-- Free Plan -->
+               <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Occasional</h3>
+                     <div class="text-4xl font-bold mb-1">Free</div>
+                     <p class="text-brand-blue-light">Perfect for trying out</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Light usage, up to 10 sentences per day</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Basic translation and optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Community support</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a
+                        href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-gray hover:bg-brand-gray-hover text-center rounded-md font-medium transition-all"
+                     >
+                        Get Started
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Regular Plan -->
+               <div
+                  class="bg-white rounded-xl shadow-lg transform md:-translate-y-4 overflow-hidden flex flex-col relative"
+               >
+                  <div
+                     class="absolute top-0 right-0 bg-brand-blue-light text-white text-xs font-bold px-3 py-1 rounded-bl-lg"
+                  >
+                     POPULAR
+                  </div>
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Regular</h3>
+                     <div class="text-4xl font-bold mb-1">$6.9</div>
+                     <p class="text-brand-blue-light">per month</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Ideal for daily active users</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Comfortable capacity for many writing sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Dedicated customer support</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a
+                        href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-blue hover:bg-brand-blue-dark text-white text-center rounded-md font-medium transition-all"
+                     >
+                        Subscribe Now
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Frequent Plan -->
+               <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Frequent</h3>
+                     <div class="text-4xl font-bold mb-1">$12.9</div>
+                     <p class="text-brand-blue-light">per month</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>For power users with intensive needs</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Generous capacity for extensive projects</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Access to advanced AI capabilities</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg
+                              class="h-6 w-6 text-green-500 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="2"
+                                 d="M5 13l4 4L19 7"
+                              ></path>
+                           </svg>
+                           <span>Premium customer support</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a
+                        href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-blue hover:bg-brand-blue-dark text-white text-center rounded-md font-medium transition-all"
+                     >
+                        Subscribe Now
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="text-center mt-8">
+               <a href="/pricing.html" class="text-brand-blue hover:text-brand-blue-dark font-medium">
+                  View detailed pricing information →
+               </a>
+            </div>
+         </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-white border-t border-gray-200">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="flex flex-col items-center justify-center space-y-4">
-                <div class="flex items-center space-x-6">
-                    <a href="/privacy.html" class="text-gray-500 hover:text-gray-900 transition-colors">Privacy
-                        Policy</a>
-                    <a href="/terms.html" class="text-gray-500 hover:text-gray-900 transition-colors">Terms of
-                        Service</a>
-                </div>
-                <p class="text-gray-500">&copy; 2025 Write CX. All rights reserved.</p>
+               <div class="flex items-center space-x-6">
+                  <a href="/privacy.html" class="text-gray-500 hover:text-gray-900 transition-colors">Privacy Policy</a>
+                  <a href="/terms.html" class="text-gray-500 hover:text-gray-900 transition-colors">Terms of Service</a>
+               </div>
+               <p class="text-gray-500">&copy; 2025 Write CX. All rights reserved.</p>
             </div>
-        </div>
-    </footer>
-</body>
-
+         </div>
+      </footer>
+   </body>
 </html>
