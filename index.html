@@ -480,29 +480,14 @@
                }
             });
 
-            // 根据当前幻灯片位置显示或隐藏导航按钮
-            if (currentSlide === 0) {
-               prevBtn.classList.add("opacity-50", "cursor-not-allowed");
-               prevBtn.classList.remove("hover:bg-white");
-               nextBtn.classList.remove("opacity-50", "cursor-not-allowed");
-               nextBtn.classList.add("hover:bg-white");
-            } else if (currentSlide === slideCount - 1) {
-               nextBtn.classList.add("opacity-50", "cursor-not-allowed");
-               nextBtn.classList.remove("hover:bg-white");
-               prevBtn.classList.remove("opacity-50", "cursor-not-allowed");
-               prevBtn.classList.add("hover:bg-white");
-            } else {
-               prevBtn.classList.remove("opacity-50", "cursor-not-allowed");
-               nextBtn.classList.remove("opacity-50", "cursor-not-allowed");
-               prevBtn.classList.add("hover:bg-white");
-               nextBtn.classList.add("hover:bg-white");
-            }
+            // 移除了禁用导航按钮的代码
          }
 
          // 切换到指定幻灯片
          function goToSlide(slideIndex) {
-            if (slideIndex < 0) slideIndex = 0;
-            if (slideIndex >= slideCount) slideIndex = slideCount - 1;
+            // 处理循环
+            if (slideIndex < 0) slideIndex = slideCount - 1; // 允许从第一张循环到最后一张
+            if (slideIndex >= slideCount) slideIndex = 0; // 允许从最后一张循环到第一张
 
             currentSlide = slideIndex;
             updateCarouselState();
@@ -510,16 +495,12 @@
 
          // 下一张幻灯片
          function nextSlide() {
-            if (currentSlide < slideCount - 1) {
-               goToSlide(currentSlide + 1);
-            }
+            goToSlide(currentSlide + 1);
          }
 
          // 上一张幻灯片
          function prevSlide() {
-            if (currentSlide > 0) {
-               goToSlide(currentSlide - 1);
-            }
+            goToSlide(currentSlide - 1);
          }
 
          // 为导航按钮添加点击事件
