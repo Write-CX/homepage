@@ -566,7 +566,7 @@
 <!-- Add Carousel Control Script -->
 <script>
    document.addEventListener("DOMContentLoaded", function () {
-      // 为每个场景创建轮播控制
+      
       setupCarousel("scene1");
       setupCarousel("scene2");
       setupCarousel("scene3");
@@ -582,41 +582,41 @@
 
          let currentSlide = 0;
          const slideCount = dots.length;
-         const visibleSlides = 3; // 同时显示3个幻灯片
+         const visibleSlides = 3; 
 
-         // 初始化轮播状态
+
          updateCarouselState();
 
-         // 更新轮播状态
+         
          function updateCarouselState() {
-            // 计算需要移动的距离，使当前幻灯片居中
+            
             let translateX;
 
-            // 特殊处理第一张幻灯片的情况
+            
             if (currentSlide === 0) {
-               translateX = 0; // 第一张幻灯片时不需要偏移
+               translateX = 0; 
             } else {
                const offset = currentSlide - 1;
-               translateX = offset * (100 / visibleSlides); // 每个幻灯片宽度为33.33%
+               translateX = offset * (100 / visibleSlides); 
             }
 
-            // 移动容器位置
+            
             container.style.transform = `translateX(-${translateX}%)`;
 
-            // 更新所有幻灯片的样式
+            
             Array.from(slides).forEach((slide, index) => {
                if (index === currentSlide) {
-                  // 当前幻灯片 - 适度放大并提高层级
+                  
                   slide.classList.add("scale-125", "z-20");
                   slide.classList.remove("scale-90", "opacity-70");
                } else {
-                  // 其他幻灯片 - 轻微缩小并降低不透明度
+                  
                   slide.classList.remove("scale-125", "z-20");
                   slide.classList.add("scale-90", "opacity-70");
                }
             });
 
-            // 更新指示点状态
+            
             dots.forEach((dot, index) => {
                if (index === currentSlide) {
                   dot.classList.add("bg-brand-blue");
@@ -627,34 +627,34 @@
                }
             });
 
-            // 移除了禁用导航按钮的代码
+         
          }
 
-         // 切换到指定幻灯片
+         
          function goToSlide(slideIndex) {
-            // 处理循环
-            if (slideIndex < 0) slideIndex = slideCount - 1; // 允许从第一张循环到最后一张
-            if (slideIndex >= slideCount) slideIndex = 0; // 允许从最后一张循环到第一张
+            
+            if (slideIndex < 0) slideIndex = slideCount - 1;
+            if (slideIndex >= slideCount) slideIndex = 0;
 
             currentSlide = slideIndex;
             updateCarouselState();
          }
 
-         // 下一张幻灯片
+         
          function nextSlide() {
             goToSlide(currentSlide + 1);
          }
 
-         // 上一张幻灯片
+         
          function prevSlide() {
             goToSlide(currentSlide - 1);
          }
 
-         // 为导航按钮添加点击事件
+         
          prevBtn.addEventListener("click", prevSlide);
          nextBtn.addEventListener("click", nextSlide);
 
-         // 为指示点添加点击事件
+         
          dots.forEach((dot, index) => {
             dot.addEventListener("click", () => goToSlide(index));
          });
