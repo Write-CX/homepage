@@ -1,333 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/svg+xml" href="/wcxicon.svg" />
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-         tailwind.config = {
-            theme: {
-               extend: {
-                  fontFamily: {
-                     sans: ["Inter", "ui-sans-serif", "system-ui"],
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" type="image/svg+xml" href="/wcxicon.svg" />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: {
+                  sans: ["Inter", "ui-sans-serif", "system-ui"],
+               },
+               colors: {
+                  "brand-blue": {
+                     DEFAULT: "#4F46E5",
+                     light: "#818CF8",
+                     dark: "#4338CA",
                   },
-                  colors: {
-                     "brand-blue": {
-                        DEFAULT: "#4F46E5",
-                        light: "#818CF8",
-                        dark: "#4338CA",
-                     },
-                     "brand-gray": {
-                        DEFAULT: "#F3F4F6",
-                        hover: "#E5E7EB",
-                     },
+                  "brand-gray": {
+                     DEFAULT: "#F3F4F6",
+                     hover: "#E5E7EB",
                   },
                },
             },
-         };
-      </script>
-      <link rel="stylesheet" href="css/main.css" />
-      <script defer src="https://cloud.umami.is/script.js" data-website-id="7ae4f712-a218-4b7f-9d8b-b0848b94459d"></script>
-   </head>
+         },
 
-   <body class="text-gray-800 antialiased bg-gray-50">
-      <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-               <div class="flex items-center space-x-2">
-                  <img src="/wcxicon.svg" alt="Write CX" class="h-8 w-8" />
-                  <span class="font-bold text-xl gradient-text">Write CX</span>
-               </div>
-               <div class="flex">
-                  <a href="#pricing-top" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
-                     Pricing
-                  </a>
-                  <a href="#how-it-works" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
-                     How it Works
-                  </a>
-                  <a
-                     href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
-                     target="_blank"
-                     class="ml-4 px-4 py-2 bg-brand-gray hover:bg-brand-gray-hover rounded-md text-gray-700 font-medium transition-all flex items-center space-x-2"
-                  >
-                     <span>Install Extension</span>
-                  </a>
-                  <a
-                     href="https://app.write.cx"
-                     class="ml-4 px-4 py-2 bg-brand-blue text-white rounded-md font-medium hover:bg-brand-blue-dark transition-all"
-                  >
-                     Get Started
-                  </a>
-               </div>
+
+      };
+   </script>
+   <link rel="stylesheet" href="css/main.css" />
+   <script defer src="https://cloud.umami.is/script.js" data-website-id="7ae4f712-a218-4b7f-9d8b-b0848b94459d"></script>
+</head>
+
+<body class="text-gray-800 antialiased bg-gray-50">
+   <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="flex justify-between items-center h-16">
+            <div class="flex items-center space-x-2">
+               <img src="/wcxicon.svg" alt="Write CX" class="h-8 w-8" />
+               <span class="font-bold text-xl gradient-text">Write CX</span>
             </div>
-         </div>
-      </nav>
-
-      <main class="pt-24">
-         <!-- Hero Section -->
-         <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 main-spacing">
-            <img src="/wcxicon.svg" alt="Write CX" class="h-24 w-24 mx-auto mb-8" />
-            <h1 class="text-5xl font-bold gradient-text mb-6">Write CX</h1>
-            <p class="text-2xl text-gray-600 max-w-2xl mx-auto mb-12">
-               Create your own multi-language workspace effortlessly <br>
-               - no matter your native language.
-            </p>
-            <div class="flex flex-col items-center space-y-4 max-w-[250px] mx-auto">
-               <a
-                  href="https://app.write.cx"
-                  class="w-full px-8 py-3 bg-brand-blue text-white text-lg rounded-md hover:bg-brand-blue-dark transition-all shadow-md text-center"
-               >
-                  Start Writing Now
+            <div class="flex">
+               <a href="#how-it-works" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
+                  How it Works
                </a>
-               <a
-                  href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
+               <a href="#features" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
+                  Features
+               </a>
+               <a href="#pricing" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
+                  Pricing
+               </a>
+               <a href="#faq" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all">
+                  FAQ
+               </a>
+               <a href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa"
                   target="_blank"
-                  class="w-full px-8 py-3 bg-white border border-gray-200 text-gray-700 text-lg rounded-md hover:bg-gray-50 transition-all shadow-md text-center flex flex-col items-center"
-               >
-                  <span class="block">Browser Extension</span>
+                  class="ml-4 px-4 py-2 bg-brand-gray hover:bg-brand-gray-hover rounded-md text-gray-700 font-medium transition-all flex items-center space-x-2">
+                  <span>Install Extension</span>
+               </a>
+               <a href="https://app.write.cx"
+                  class="ml-4 px-4 py-2 bg-brand-blue text-white rounded-md font-medium hover:bg-brand-blue-dark transition-all">
+                  Get Started
                </a>
             </div>
          </div>
+      </div>
+   </nav>
 
-         <!-- Features Section -->
-         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Streamlined for Repetitive Tasks</h3>
-                  <p class="text-gray-600">
-                     Persist instructions to avoid repeating yourself, ensuring consistent and effortless AI collaboration.
-                  </p>
+   <main class="pt-24">
+      <!-- Hero Section -->
+      <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 main-spacing">
+         <img src="/wcxicon.svg" alt="Write CX" class="h-24 w-24 mx-auto mb-8" />
+         <h1 class="text-5xl font-bold gradient-text mb-6">Write CX</h1>
+         <p class="text-2xl text-gray-600 max-w-2xl mx-auto mb-12">
+            <span id="type-text"></span>
+        </p>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('#type-text', {
+               strings: [
+                  'Create your own AI assistant in minutes',
+                  'Build a personalized workspace for daily text tasks',
+                  'Stop repeating instructions, save time,<br>and focus on what matters',
+               ],
+                typeSpeed: 28,   
+                backSpeed: 0,      
+                  backDelay: 2200,   
+                  fadeOut: true,     
+                  fadeOutClass: 'typed-fade-out',
+                  fadeOutDelay: 100,  
+                loop: true,      
+                showCursor: true, 
+                cursorChar: '|'  
+            });
+        </script>
+        
+         <div class="flex flex-col items-center space-y-4 max-w-[250px] mx-auto">
+            <a href="https://app.write.cx"
+               class="w-full px-8 py-3 bg-brand-blue text-white text-lg rounded-md hover:bg-brand-blue-dark transition-all shadow-md text-center">
+               Try For Free
+            </a>
+            <a href="https://chromewebstore.google.com/detail/write-cx/bmfpagngncmcclmegggnnihbldebnlfa" target="_blank"
+               class="w-full px-8 py-3 bg-white border border-gray-200 text-gray-700 text-lg rounded-md hover:bg-gray-50 transition-all shadow-md text-center flex flex-col items-center">
+               <span class="block">Browser Extension</span>
+            </a>
+         </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+               <h3 class="text-xl font-semibold text-gray-900 mb-4">Streamlined for Repetitive Tasks</h3>
+               <p class="text-gray-600">
+                  Persist instructions to avoid repeating yourself, ensuring consistent and effortless AI collaboration.
+               </p>
+            </div>
+            <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+               <h3 class="text-xl font-semibold text-gray-900 mb-4">Customizable Actions for Fingertips Actions</h3>
+               <p class="text-gray-600">
+                  Easily trigger customizable actions directly on selected text, offering a smooth and personalized
+                  workflow experience.
+               </p>
+            </div>
+            <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
+               <h3 class="text-xl font-semibold text-gray-900 mb-4">Opinion-Infused AI Generation</h3>
+               <p class="text-gray-600">
+                  Create content that integrates personalized insights and opinions, delivering more context-aware and
+                  human-like responses.
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Separator Line -->
+      <div id="how-it-works" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+         <div class="border-b border-gray-400"></div>
+      </div>
+
+      <!-- Onboarding Section -->
+      <!-- How to Use Section -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+         <h2 class="text-3xl font-bold text-center mb-4">How to Use Write CX</h2>
+         <p class="text-xl text-gray-600 text-center mb-12">Simple Steps to Boost Your Language Confidence</p>
+
+         <!-- Steps Container -->
+         <div class="space-y-11">
+            <!-- Step 1 -->
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+               <div class="w-full lg:w-1/2">
+                  <div class="max-w-lg lg:pl-8">
+                     <h3 class="text-2xl font-semibold mb-4">1. Customize your own AI features</h3>
+                     <p class="text-gray-600 text-lg leading-relaxed">
+                        Just describe what you want it to do. Set your tone, goals, and style — once and done.
+                     </p>
+                  </div>
                </div>
-               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Customizable Actions for Fingertips Actions</h3>
-                  <p class="text-gray-600">
-                     Easily trigger customizable actions directly on selected text, offering a smooth and personalized workflow experience.
-                  </p>
+               <div class="w-full lg:w-1/2">
+                  <video src="images/202505242042.mp4" alt="Target Selection"
+                     class="rounded-xl w-full object-cover shadow-lg" style="height: 300px; object-fit: cover;" autoplay
+                     loop muted playsinline></video>
                </div>
-               <div class="feature bg-white p-8 rounded-xl shadow-sm hover:shadow-lg">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Opinion-Infused AI Generation</h3>
-                  <p class="text-gray-600">
-                     Create content that integrates personalized insights and opinions, delivering more context-aware and human-like responses.
-                  </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+               <div class="w-full lg:w-1/2 order-2 lg:order-1 pl-4">
+                  <video src="images/202505242043.mp4" alt="Make an Action"
+                     class="rounded-xl w-full object-cover shadow-lg" style="height: 300px; object-fit: cover;" autoplay
+                     loop muted playsinline></video>
+               </div>
+               <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                  <div class="max-w-lg">
+                     <h3 class="text-2xl font-semibold mb-4">2. Bring it to where you work</h3>
+                     <p class="text-gray-600 text-lg leading-relaxed">
+                        Install the Chrome extension and use your AI assistant right on any webpage.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+               <div class="w-full lg:w-1/2">
+                  <div class="max-w-lg lg:pl-8">
+                     <h3 class="text-2xl font-semibold mb-4">3. AI should never speak for you</h3>
+                     <p class="text-gray-600 text-lg leading-relaxed">
+                        Add your thoughts during generation. It's always your voice, not just AI.
+                     </p>
+                  </div>
+               </div>
+               <div class="w-full lg:w-1/2">
+                  <video src="images/202505242044.mp4" alt="Apply Result"
+                     class="rounded-xl w-full object-cover shadow-lg" style="height: 300px; object-fit: cover;" autoplay
+                     loop muted playsinline></video>
+               </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+               <div class="w-full lg:w-1/2 order-2 lg:order-1 pl-4">
+                  <a href="https://app.write.cx/" target="_blank">
+                     <img src="images/guide4_actions.jpg" alt="Try It Out"
+                        class="rounded-xl w-full object-cover shadow-lg hover:opacity-90 transition-opacity"
+                        style="height: 300px; object-fit: cover;" />
+                  </a>
+               </div>
+               <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                  <div class="max-w-lg">
+                     <h3 class="text-2xl font-semibold mb-4">4. Multiply them, build your workspace</h3>
+                     <p class="text-gray-600 text-lg leading-relaxed">
+                        Add widgets like "Translate," "Reply,", "Give Reference" or "Make Sentence" — no tab switching
+                        needed.
+                     </p>
+                  </div>
                </div>
             </div>
          </div>
+      </div>
+      </div>
 
-         <!-- Separator Line -->
-         <div id="how-it-works" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="border-b border-gray-400"></div>
+      <div id="features" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+         <div class="border-b border-gray-400"></div>
+      </div>
+
+      <!-- Product Comparison Section -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+         <h2 class="text-3xl font-bold text-center mb-4">Features - Why Choose Write CX?</h2>
+         <p class="text-xl text-gray-600 text-center mb-12">Make frequent text generation easy, personal, and always accessible</p>
+       
+         <div class="overflow-x-auto">
+           <table class="w-full border-collapse">
+             <thead>
+               <tr class="border-b-2 border-gray-200">
+                 <th class="p-4 text-left">Features</th>
+                 <th class="p-4 text-center bg-brand-blue/5">🟢 Custom Text Companion</th>
+                 <th class="p-4 text-center">🔵 Task Plugin</th>
+                 <th class="p-4 text-center">🟣 Pro Writing Enhancer</th>
+                 <th class="p-4 text-center">🟠 AI Toolbox</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Description</td>
+                 <td class="p-4 text-center bg-brand-blue/5">Build AI features with natural language – no code needed</td>
+                 <td class="p-4 text-center">Lightweight tools for replies, translation, and summaries</td>
+                 <td class="p-4 text-center">Helps you write clearer and more fluent English</td>
+                 <td class="p-4 text-center">Multi-featured assistant with built-in AI services</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Examples</td>
+                 <td class="p-4 text-center bg-brand-blue/5">Write CX</td>
+                 <td class="p-4 text-center">reddit-translator, <br>reply guy</td>
+                 <td class="p-4 text-center">Grammarly, <br>Compose AI, Quillbot</td>
+                 <td class="p-4 text-center">Monica, <br>ChatGPT Sidebar</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Chrome Extension</td>
+                 <td class="p-4 text-center bg-brand-blue/5">✅ Feature customizable widget</td>
+                 <td class="p-4 text-center">✅ Fixed-action widget</td>
+                 <td class="p-4 text-center">✅ Mostly focused on writing canvas or input areas</td>
+                 <td class="p-4 text-center">✅ Sidebar with multiple tools</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Custom Tone, Style, Detail</td>
+                 <td class="p-4 text-center bg-brand-blue/5">✅ Full support</td>
+                 <td class="p-4 text-center">❌Limited</td>
+                 <td class="p-4 text-center">❌Not supported</td>
+                 <td class="p-4 text-center">Mostly not applicable</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Custom Role</td>
+                 <td class="p-4 text-center bg-brand-blue/5">✅ Yes</td>
+                 <td class="p-4 text-center">❌</td>
+                 <td class="p-4 text-center">❌N/A</td>
+                 <td class="p-4 text-center">❌</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">User Opinion Based Generation</td>
+                 <td class="p-4 text-center bg-brand-blue/5">✅ Real-time</td>
+                 <td class="p-4 text-center">❌</td>
+                 <td class="p-4 text-center">❌</td>
+                 <td class="p-4 text-center">❌</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Writing Enhancement Power</td>
+                 <td class="p-4 text-center bg-brand-blue/5">❌ Very limited, Depends on instructions</td>
+                 <td class="p-4 text-center">❌</td>
+                 <td class="p-4 text-center">✅ Strong</td>
+                 <td class="p-4 text-center">Limited</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Free Version</td>
+                 <td class="p-4 text-center bg-brand-blue/5">✅ Monthly free quota</td>
+
+                 <td class="p-4 text-center">✅ If using own key</td>
+                 <td class="p-4 text-center">Only for trial</td>
+                 <td class="p-4 text-center">Limited free features and usage</td> 
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Price</td>
+                 <td class="p-4 text-center bg-brand-blue/5">$7.9/mo</td>
+                 <td class="p-4 text-center">$6–$12</td>
+                 <td class="p-4 text-center">$10–$20/mo</td>
+                 <td class="p-4 text-center">$10–$20/mo</td>
+               </tr>
+               <tr class="border-b border-gray-200">
+                 <td class="p-4">Best For</td>
+                 <td class="p-4 text-center bg-brand-blue/5">Customer support, localization, consulting</td>
+                 <td class="p-4 text-center">Social replies, lightweight interactions</td>
+                 <td class="p-4 text-center">Writing, composing, clarity</td>
+                 <td class="p-4 text-center">Summarizing, general tasks</td>
+               </tr>
+             </tbody>
+           </table>
          </div>
+       </div>
+       
 
-         <!-- Onboarding Section -->
-         <!-- How to Use Section -->
-         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-4">How to Use Write CX</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">Simple Steps to Boost Your Language Confidence</p>
+      <div id="pricing" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+         <div class="border-b border-gray-400"></div>
+      </div>
 
-            <!-- Steps Container -->
-            <div class="space-y-11">
-               <!-- Step 1 -->
-               <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                  <div class="w-full lg:w-1/2">
-                     <div class="max-w-lg lg:pl-8">
-                        <h3 class="text-2xl font-semibold mb-4">1. Customize your own AI features</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                           Just describe what you want it to do. Set your tone, goals, and style — once and done.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="w-full lg:w-1/2">
-                     <video
-                        src="images/202505242042.mp4"
-                        alt="Target Selection"
-                        class="rounded-xl w-full object-cover shadow-lg"
-                        style="height: 300px; object-fit: cover;"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                     ></video>
-                  </div>
-               </div>
+      <!-- Pricing Section -->
+      <div id="faq" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 mb-10">
+         <h2 class="text-3xl font-bold text-center mb-4">Start Free, Upgrade When You Need</h2>
+         <p class="text-xl text-gray-600 text-center mb-12">No credit card required to start</p>
 
-               <!-- Step 2 -->
-               <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                  <div class="w-full lg:w-1/2 order-2 lg:order-1 pl-4">
-                     <video
-                        src="images/202505242043.mp4"
-                        alt="Make an Action"
-                        class="rounded-xl w-full object-cover shadow-lg"
-                        style="height: 300px; object-fit: cover;"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                     ></video>
+         <div class="flex justify-center">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl">
+               <!-- Free Plan -->
+               <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Occasional Use</h3>
+                     <div class="text-4xl font-bold mb-1">Free</div>
+                     <p class="text-brand-blue-light">$0 / month</p>
                   </div>
-                  <div class="w-full lg:w-1/2 order-1 lg:order-2">
-                     <div class="max-w-lg">
-                        <h3 class="text-2xl font-semibold mb-4">2. Bring it to where you work</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                           Install the Chrome extension and use your AI assistant right on any webpage.
-                        </p>
-                     </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>Perfect for exploring the service</span>
+                        </li>
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>Enough for several generations per day</span>
+                        </li>
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>Includes 3 built-in action types: Reply, Improve, Translate</span>
+                        </li>
+                     </ul>
                   </div>
-               </div>
-
-               <!-- Step 3 -->
-               <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                  <div class="w-full lg:w-1/2">
-                     <div class="max-w-lg lg:pl-8">
-                        <h3 class="text-2xl font-semibold mb-4">3. AI should never speak for you</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                           Add your thoughts during generation. It's always your voice, not just AI.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="w-full lg:w-1/2">
-                     <video
-                        src="images/202505242044.mp4"
-                        alt="Apply Result"
-                        class="rounded-xl w-full object-cover shadow-lg"
-                        style="height: 300px; object-fit: cover;"
-                        autoplay
-                        loop
-                        muted
-                        playsinline
-                     ></video>
-                  </div>
-               </div>
-
-               <!-- Step 4 -->
-               <div class="flex flex-col lg:flex-row lg:items-center gap-6">
-                  <div class="w-full lg:w-1/2 order-2 lg:order-1 pl-4">
-                     <a href="https://app.write.cx/" target="_blank">
-                        <img
-                           src="images/guide4_actions.jpg"
-                           alt="Try It Out"
-                           class="rounded-xl w-full object-cover shadow-lg hover:opacity-90 transition-opacity"
-                           style="height: 300px; object-fit: cover;"
-                        />
+                  <div class="p-6 border-t border-gray-100">
+                     <a href="https://app.write.cx"
+                        class="block w-full py-3 px-4 bg-brand-gray hover:bg-brand-gray-hover text-center rounded-md font-medium transition-all">
+                        Get Started
                      </a>
                   </div>
-                  <div class="w-full lg:w-1/2 order-1 lg:order-2">
-                     <div class="max-w-lg">
-                        <h3 class="text-2xl font-semibold mb-4">4. Multiply them, build your workspace</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                           Add widgets like "Translate," "Reply,", "Give Reference" or "Make Sentence" — no tab switching needed.
-                        </p>
-                     </div>
+               </div>
+
+               <!-- Regular Plan -->
+               <div
+                  class="bg-white rounded-xl shadow-lg transform md:-translate-y-4 overflow-hidden flex flex-col relative">
+
+                  <div class="bg-brand-blue p-6 text-white text-center">
+                     <h3 class="text-xl font-bold mb-2">Regular Use</h3>
+                     <div class="text-4xl font-bold mb-1">$7.9 / month</div>
+                     <p class="text-brand-blue-light">20x + Unlock features</p>
+                  </div>
+                  <div class="p-6 flex-grow">
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>Designed for consistent daily content creation</span>
+                        </li>
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>20x the capacity of the Free tier</span>
+                        </li>
+                        <li class="flex items-start">
+                           <img src="/images/checkmark.svg" class="mr-2" />
+                           <span>Unlock custom action profiles — tailor to your specific scenarios</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="p-6 border-t border-gray-100">
+                     <a href="https://app.write.cx/settings.html"
+                        class="block w-full py-3 px-4 bg-brand-blue hover:bg-brand-blue-dark text-white text-center rounded-md font-medium transition-all">
+                        Subscribe Now
+                     </a>
                   </div>
                </div>
             </div>
          </div>
-         </div>
-
-         <div id="pricing-top" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="border-b border-gray-400"></div>
-         </div>
-
-         <!-- Pricing Section -->
-         <div id="pricing" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 mb-10">
-            <h2 class="text-3xl font-bold text-center mb-4">Start Free, Upgrade When You Need</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">No credit card required to start</p>
-
-            <div class="flex justify-center">
-               <div class="grid md:grid-cols-2 gap-8 max-w-4xl">
-                  <!-- Free Plan -->
-                  <div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
-                     <div class="bg-brand-blue p-6 text-white text-center">
-                        <h3 class="text-xl font-bold mb-2">Occasional Use</h3>
-                        <div class="text-4xl font-bold mb-1">Free</div>
-                        <p class="text-brand-blue-light">$0 / month</p>
-                     </div>
-                     <div class="p-6 flex-grow">
-                        <ul class="space-y-4">
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>Perfect for exploring the service</span>
-                           </li>
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>Enough for several generations per day</span>
-                           </li>
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>Includes 3 built-in action types: Reply, Improve, Translate</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="p-6 border-t border-gray-100">
-                        <a
-                           href="https://app.write.cx"
-                           class="block w-full py-3 px-4 bg-brand-gray hover:bg-brand-gray-hover text-center rounded-md font-medium transition-all"
-                        >
-                           Get Started
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Regular Plan -->
-                  <div
-                     class="bg-white rounded-xl shadow-lg transform md:-translate-y-4 overflow-hidden flex flex-col relative"
-                  >
-                
-                     <div class="bg-brand-blue p-6 text-white text-center">
-                        <h3 class="text-xl font-bold mb-2">Regular Use</h3>
-                        <div class="text-4xl font-bold mb-1">$7.9 / month</div>
-                        <p class="text-brand-blue-light">20x + Unlock features</p>
-                     </div>
-                     <div class="p-6 flex-grow">
-                        <ul class="space-y-4">
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>Designed for consistent daily content creation</span>
-                           </li>
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>20x the capacity of the Free tier</span>
-                           </li>
-                           <li class="flex items-start">
-                              <img src="/images/checkmark.svg" class="mr-2" />
-                              <span>Unlock custom action profiles — tailor to your specific scenarios</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="p-6 border-t border-gray-100">
-                        <a
-                           href="https://app.write.cx/settings.html"
-                           class="block w-full py-3 px-4 bg-brand-blue hover:bg-brand-blue-dark text-white text-center rounded-md font-medium transition-all"
-                        >
-                           Subscribe Now
-                        </a>
-                     </div>
-                  </div>
+      </div>
+   </main>
+   <!-- FAQ Section -->
+   <div id="faq-content" class="max-w-4xl mx-auto ">
+      <h2 class="text-3xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+      <p class="text-xl text-gray-600 text-center mb-12">Learn more about Write CX</p>
+      <!-- FAQ Section -->
+      <div class="space-y-4">
+         <!-- Question 1 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     What is Write CX?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
                </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               A powerful text generation assistant designed to be readily available at your fingertips, seamlessly
+               integrating into your workflow wherever you write.
             </div>
          </div>
-      </main>
 
-      <!-- Footer -->
-      <footer class="bg-white border-t border-gray-200">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col items-center justify-center space-y-4">
-               <div class="flex items-center space-x-6">
-                  <a href="/privacy.html" class="text-gray-500 hover:text-gray-900 transition-colors">Privacy Policy</a>
-                  <a href="/terms.html" class="text-gray-500 hover:text-gray-900 transition-colors">Terms of Service</a>
+         <!-- Question 2 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     Can I use the free version indefinitely?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
                </div>
-               <p class="text-gray-500">&copy; 2025 Write CX. All rights reserved.</p>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               Yes! Your free credits refresh monthly. As long as you stay within the usage limits, you can continue
+               using the free version indefinitely - no credit card required.
             </div>
          </div>
-      </footer>
-   </body>
+
+         <!-- Question 3 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     What's included in the paid plan?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+               </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               The paid plan offers 20x more usage than the free version and unlocks additional customizable action
+               slots. This allows you to transform any website into your personalized workspace, eliminating the need to
+               switch between tabs. Perfect for teams handling intensive text work, especially beneficial for
+               international teams and non-native speakers in customer support, marketing, and consulting roles.
+            </div>
+         </div>
+
+         <!-- Question 4 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     How does Write CX differ from other writing assistants?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+               </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               We specialize in streamlining repetitive text work through customizable assistant actions. Instead of
+               focusing on individual word optimization, we help you maintain your natural writing style while gradually
+               improving your language skills through contextual suggestions.
+            </div>
+         </div>
+
+         <!-- Question 5 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     How does Write CX compare to other AI tools?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+               </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               We focus on enhancing your daily writing workflow through two key features: customizable operations that
+               integrate directly into your browsing experience, and the ability to incorporate your personal style into
+               generated text. While we don't offer specialized services like repository or video summarization, we
+               excel at making your routine writing tasks more efficient.
+            </div>
+         </div>
+
+         <!-- Question 6 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     How can I request new features?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+               </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               Simply log in to your account, navigate to the Settings page, and submit your feature request through the
+               provided form.
+            </div>
+         </div>
+
+         <!-- Question 7 -->
+         <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            <button class="w-full text-left p-6 focus:outline-none hover:bg-brand-blue group" onclick="toggleFAQ(this)">
+               <div class="flex justify-between items-center">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-white transition-colors duration-200">
+                     How do I cancel my subscription?</h3>
+                  <svg
+                     class="w-6 h-6 transform transition-transform duration-200 text-brand-blue group-hover:text-white"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+               </div>
+            </button>
+            <div class="hidden px-6 pb-6 text-gray-600">
+               Visit the Settings page and click the cancel button. We'll automatically process a refund for any unused
+               portion of your monthly subscription.
+            </div>
+         </div>
+      </div>
+
+      <!-- Add FAQ Toggle Script -->
+      <script>
+         function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+
+            // Toggle answer visibility
+            answer.classList.toggle('hidden');
+
+            // Rotate icon
+            if (answer.classList.contains('hidden')) {
+               icon.classList.remove('rotate-180');
+            } else {
+               icon.classList.add('rotate-180');
+            }
+         }
+      </script>
+
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-white border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+         <div class="flex flex-col items-center justify-center space-y-4">
+            <div class="flex items-center space-x-6">
+               <a href="/privacy.html" class="text-gray-500 hover:text-gray-900 transition-colors">Privacy Policy</a>
+               <a href="/terms.html" class="text-gray-500 hover:text-gray-900 transition-colors">Terms of Service</a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Write CX. All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
+</body>
+
 </html>
 
 <!-- Add Carousel Control Script -->
 <script>
    document.addEventListener("DOMContentLoaded", function () {
-      
+
       setupCarousel("scene1");
       setupCarousel("scene2");
 
@@ -342,41 +598,41 @@
 
          let currentSlide = 0;
          const slideCount = dots.length;
-         const visibleSlides = 3; 
+         const visibleSlides = 3;
 
 
          updateCarouselState();
 
-         
+
          function updateCarouselState() {
-            
+
             let translateX;
 
-            
+
             if (currentSlide === 0) {
-               translateX = 0; 
+               translateX = 0;
             } else {
                const offset = currentSlide - 1;
-               translateX = offset * (100 / visibleSlides); 
+               translateX = offset * (100 / visibleSlides);
             }
 
-            
+
             container.style.transform = `translateX(-${translateX}%)`;
 
-            
+
             Array.from(slides).forEach((slide, index) => {
                if (index === currentSlide) {
-                  
+
                   slide.classList.add("scale-125", "z-20");
                   slide.classList.remove("scale-90", "opacity-70");
                } else {
-                  
+
                   slide.classList.remove("scale-125", "z-20");
                   slide.classList.add("scale-90", "opacity-70");
                }
             });
 
-            
+
             dots.forEach((dot, index) => {
                if (index === currentSlide) {
                   dot.classList.add("bg-brand-blue");
@@ -387,12 +643,12 @@
                }
             });
 
-         
+
          }
 
-         
+
          function goToSlide(slideIndex) {
-            
+
             if (slideIndex < 0) slideIndex = slideCount - 1;
             if (slideIndex >= slideCount) slideIndex = 0;
 
@@ -400,21 +656,21 @@
             updateCarouselState();
          }
 
-         
+
          function nextSlide() {
             goToSlide(currentSlide + 1);
          }
 
-         
+
          function prevSlide() {
             goToSlide(currentSlide - 1);
          }
 
-         
+
          prevBtn.addEventListener("click", prevSlide);
          nextBtn.addEventListener("click", nextSlide);
 
-         
+
          dots.forEach((dot, index) => {
             dot.addEventListener("click", () => goToSlide(index));
          });
